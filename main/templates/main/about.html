@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عني</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+
+</head> 
+<body>
+    <!--                       -->
+<nav>
+    <ul>
+        <li><a href="{% url 'index' %}">الرئيسية</a></li>
+        <li><a href="{% url 'about' %}">عني</a></li>
+        <li><a href="{% url 'products' %}">  أنجازاتي </a></li>
+        <li><a href="{% url 'contact' %}">لتواصل </a></li>
+    </ul>
+</nav>
+                    <!--                       -->
+    <main>
+        <!--          <h1>عني</h1>              -->
+        <div class="profile-section">
+            <img src="{% static 'images/469.jpg' %}" alt="صورة خالد عمر باشميل" class="profile-image" >
+
+
+            <div class="about-content">
+                <br>
+                <br>
+                <h2>م. خالد عمر باشميل</h2>
+                <div class="about-details">
+                    <h3> لصيانة الأجهزة الكهربائية والإلكترونية</h3>
+                    <div class="expertise-areas">
+                        <h4>مجالات الخبرة:</h4>
+                        <ul>
+                            <li> صيانة المعدات الصناعية </li>
+                            <li>صيانة الأجهزة الإلكترونية</li>
+                            <li>تركيب وبرمجة الأجهزة الحديثة و المتحكمات الدقيقه </li>
+                             <li>  تصميم و تركيب أنظمة تتبع الشمس للألواح الشمسية   </li>
+                            <li> تصميم رسومات على برنامج FreeCAD </li>
+                            <li> تصميم رسومات  PCB </li>
+                            <li>الصيانة الدورية</li>
+                           
+                      
+                            
+                            
+                            
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

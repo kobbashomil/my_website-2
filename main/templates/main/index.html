@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="{% url 'index' %}">الرئيسية</a></li>
+        <li><a href="{% url 'about' %}">عني</a></li>
+        <li><a href="{% url 'products' %}">  أنجازاتي </a></li>
+        <li><a href="{% url 'contact' %}">لتواصل</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <h1>موقع المهندس/ خالد عمر باشميل</h1>
+        <h3>  أهلا وسهلا بكم   </h3>
+    </main>
+    <img src="{% static 'images/17.jpg' %}" alt="صورة خالد عمر باشميل" class="main-image" >
+    <br>
+    <br>
+</body>
+</html>
